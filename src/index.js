@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './components/App';
+import FarmersMarketApp from './components/FarmersMarketApp';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<FarmersMarketApp />, document.getElementById('root'));
 registerServiceWorker();
