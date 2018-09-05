@@ -4,10 +4,12 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 
 const DayCard = (props) => {
+  const dayMatch = props.day === props.weekDay ? '10px solid #3f51b5' : '';
   const dayCardBox = {
     width: '70%',
     margin: '20px auto',
     fontFamily: 'Raleway',
+    borderLeft: dayMatch
   }
   const dayCardHeader = {
     margin: '10px 20px',
@@ -25,9 +27,6 @@ const DayCard = (props) => {
     border: '0px',
     marginBottom: '20px'
   }
-  const dayMatch = props.day === props.weekDay ?
-    dayCardBox.boxShadow = '4px 4px 50px #5c73f1' :
-    dayCardBox.boxShadow = '';
   return (
     <div>
       <Card style={dayCardBox}>
