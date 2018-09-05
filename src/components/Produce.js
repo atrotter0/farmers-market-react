@@ -2,7 +2,8 @@ import React from 'react';
 
 const produceColumn = {
   display: 'inline-block',
-  width: '80%'
+  width: '60%',
+  outline: '1px solid black'
 };
 
 const Produce = () => {
