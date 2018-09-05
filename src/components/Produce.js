@@ -5,13 +5,11 @@ import availableProduce from '../produceData';
 const Produce = () => {
   const data = availableProduce();
   const produceColumn = {
-    display: 'inline-block',
-    width: '65%',
     verticalAlign: 'top'
   }
   const currentMonth = new Date().toLocaleString('en-us', { month: "long"});
   return (
-    <div style={produceColumn}>
+    <div style={produceColumn} className='produceColumn'>
       {data.map((data, index) =>
         <MonthPanel
           month={data.month}

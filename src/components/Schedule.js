@@ -1,5 +1,6 @@
 import React from 'react';
 import DayCard from './DayCard';
+import '../styles/responsive.css';
 
 const marketSchedule = [
  {
@@ -42,14 +43,12 @@ const marketSchedule = [
 
 const Schedule = () => {
   const scheduleColumn = {
-    display: 'inline-block',
-    width: '35%',
     maxWidth: '525px'
   };
 
   const weekDay = new Date().toLocaleString('en-us', { weekday: "long"});
   return (
-    <div style={scheduleColumn}>
+    <div style={scheduleColumn} className='scheduleColumn'>
     {marketSchedule.map((market, index) =>
       <DayCard
         day={market.day}
