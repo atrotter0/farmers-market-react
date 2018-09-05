@@ -10,7 +10,6 @@ const Produce = () => {
     verticalAlign: 'top'
   }
   const currentMonth = new Date().toLocaleString('en-us', { month: "long"});
-  console.log(currentMonth);
   return (
     <div style={produceColumn}>
       {data.map((data, index) =>

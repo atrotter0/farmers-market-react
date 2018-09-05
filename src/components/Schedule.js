@@ -48,7 +48,6 @@ const Schedule = () => {
   };
 
   const weekDay = new Date().toLocaleString('en-us', { weekday: "long"});
-  console.log(weekDay);
   return (
     <div style={scheduleColumn}>
     {marketSchedule.map((market, index) =>
