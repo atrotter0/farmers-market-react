@@ -42,18 +42,22 @@ const marketSchedule = [
 
 const scheduleColumn = {
   display: 'inline-block',
-  width: '40%'
+  width: '35%',
+  outline: '1px solid red'
 };
 
 const Schedule = () => {
   return (
     <div style={scheduleColumn}>
+    {marketSchedule.map((market, index) =>
       <DayCard
-        day="Monday"
-        location="Lents International"
-        hours="9:00am - 2:00pm"
-        booth="4A"
+        day={market.day}
+        location={market.location}
+        hours={market.hours}
+        booth={market.booth}
       />
+    )}
+
     </div>
   )
 }
