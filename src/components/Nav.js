@@ -22,7 +22,7 @@ const Nav = () => {
       <AppBar style={navStyles}>
         <Toolbar>
           <IconButton>
-            <Toys style={iconStyle} />
+            <Toys style={iconStyle} className='App-logo'/>
           </IconButton>
           Farmer's Market
         </Toolbar>
