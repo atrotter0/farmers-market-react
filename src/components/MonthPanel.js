@@ -6,10 +6,12 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import Chip from '@material-ui/core/Chip';
 
 const MonthPanel = (props) => {
+  const monthMatch = props.month === props.currentMonth ? '5px solid #3f51b5' : '';
   const panelStyle = {
     margin: '20px auto',
     width: '90%',
-    fontFamily: 'Raleway'
+    fontFamily: 'Raleway',
+    borderLeft: monthMatch
   }
   const panelDetailsStyle = {
     fontFamily: 'Raleway',
@@ -19,9 +21,6 @@ const MonthPanel = (props) => {
   const chipStyle = {
     margin: '5px'
   }
-  const monthMatch = props.month === props.currentMonth ?
-    panelStyle.boxShadow = '4px 4px 50px #5c73f1' :
-    panelStyle.boxShadow = '';
   return (
     <div>
       <ExpansionPanel style={panelStyle}>
