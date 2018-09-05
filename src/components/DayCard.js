@@ -9,7 +9,8 @@ const DayCard = (props) => {
     width: '70%',
     margin: '20px auto',
     fontFamily: 'Raleway',
-    borderLeft: dayMatch
+    borderLeft: dayMatch,
+    minWidth: '226px'
   }
   const dayCardHeader = {
     margin: '10px 20px',
