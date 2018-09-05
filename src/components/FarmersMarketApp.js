@@ -7,10 +7,13 @@ import Produce from './Produce';
 
 class FarmersMarketApp extends Component {
   render() {
+    const bodyStyle = {
+      maxWidth: '1500px'
+    }
     return (
       <div>
         <Nav />
-        <div>
+        <div style={bodyStyle}>
           <Schedule />
           <Produce />
         </div>

@@ -1,15 +1,26 @@
 import React from 'react';
+import MonthPanel from './MonthPanel';
+import availableProduce from '../produceData';
 
 const Produce = () => {
+  const data = availableProduce();
   const produceColumn = {
     display: 'inline-block',
     width: '65%',
-    outline: '1px solid black',
     verticalAlign: 'top'
   }
+  const currentMonth = new Date().toLocaleString('en-us', { month: "long"});
+  console.log(currentMonth);
   return (
     <div style={produceColumn}>
-      Produce
+      {data.map((data, index) =>
+        <MonthPanel
+          month={data.month}
+          produceList={data.selection}
+          currentMonth={currentMonth}
+          key={index}
+        />
+      )}
     </div>
   );
 }

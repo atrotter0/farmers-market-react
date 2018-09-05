@@ -40,13 +40,15 @@ const marketSchedule = [
  }
 ];
 
-const scheduleColumn = {
-  display: 'inline-block',
-  width: '35%',
-  outline: '1px solid red'
-};
-
 const Schedule = () => {
+  const scheduleColumn = {
+    display: 'inline-block',
+    width: '35%',
+    maxWidth: '525px'
+  };
+
+  const weekDay = new Date().toLocaleString('en-us', { weekday: "long"});
+  console.log(weekDay);
   return (
     <div style={scheduleColumn}>
     {marketSchedule.map((market, index) =>
@@ -55,6 +57,8 @@ const Schedule = () => {
         location={market.location}
         hours={market.hours}
         booth={market.booth}
+        weekDay={weekDay}
+        key={index}
       />
     )}
 

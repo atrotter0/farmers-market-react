@@ -7,20 +7,17 @@ const DayCard = (props) => {
   const dayCardBox = {
     width: '70%',
     margin: '20px auto',
-    fontFamily: 'Raleway'
+    fontFamily: 'Raleway',
   }
-
   const dayCardHeader = {
     margin: '10px 20px',
     textAlign: 'center',
     fontSize: '1.2em',
     fontWeight: 'bold'
   }
-
   const dayCardContent = {
     textAlign: 'center'
   }
-
   const hrStyle = {
     width: '50%',
     height: '2px',
@@ -28,6 +25,9 @@ const DayCard = (props) => {
     border: '0px',
     marginBottom: '20px'
   }
+  const dayMatch = props.day === props.weekDay ?
+    dayCardBox.boxShadow = '4px 4px 50px #5c73f1' :
+    dayCardBox.boxShadow = '';
   return (
     <div>
       <Card style={dayCardBox}>
@@ -50,7 +50,8 @@ DayCard.propTypes = {
   day: PropTypes.string,
   location: PropTypes.string,
   hours: PropTypes.string,
-  booth: PropTypes.string
+  booth: PropTypes.string,
+  weekDay: PropTypes.string
 };
 
 export default DayCard;
