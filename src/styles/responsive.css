@@ -3,6 +3,11 @@
     display: inline-block;
     width: 35%;
   }
+
+  .produceColumn {
+    display: inline-block;
+    width: 65%;
+  }
 }
 
 @media screen and (max-width: 650px) {
@@ -11,16 +16,7 @@
     width: 100%;
     margin: 0 auto;
   }
-}
 
-@media screen and (min-width: 650px) {
-  .produceColumn {
-    display: inline-block;
-    width: 65%;
-  }
-}
-
-@media screen and (max-width: 650px) {
   .produceColumn {
     display: block;
     width: 100%;
