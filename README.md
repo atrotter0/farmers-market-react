@@ -12,6 +12,7 @@ A React app that displays data for a local farmer's market.
 
 * Install Node.js
 * Clone the repo
+* `yarn` to install dependencies
 * `yarn start` starts the development server on localhost:3000
 * `yarn build` bundles the app into static files for production
 * `yarn test` starts the test runner
