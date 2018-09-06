@@ -9,7 +9,7 @@ const MonthPanel = (props) => {
   const monthMatch = props.month === props.currentMonth;
   const marker = monthMatch ? '5px solid #3f51b5' : '';
   const panelStyle = {
-    margin: '20px auto',
+    margin: '20px',
     width: '90%',
     fontFamily: 'Raleway',
     borderLeft: marker
