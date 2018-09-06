@@ -11,11 +11,13 @@ const Nav = () => {
     fontSize: '2em',
     fontFamily: 'Josefin Sans',
     position: 'static'
-  };
-
+  }
   const iconStyle = {
     color: '#fff',
     fontSize: '1.5em',
+  }
+  const navTitleStyle = {
+    marginLeft: '8px'
   }
   return (
     <div>
@@ -24,7 +26,7 @@ const Nav = () => {
           <IconButton>
             <Toys style={iconStyle} className='logo'/>
           </IconButton>
-          Farmer's Market
+          <span style={navTitleStyle}>Farmer's Market</span>
         </Toolbar>
       </AppBar>
     </div>
