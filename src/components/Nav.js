@@ -8,6 +8,7 @@ import Button from '@material-ui/core/Button';
 
 const Nav = () => {
   const navStyles = {
+    backgroundColor: '#5f2126',
     height: '80px',
     paddingTop: '10px',
     fontSize: '2em',
