@@ -1,21 +1,19 @@
 import React, { Component } from 'react';
+import { Switch, Route } from 'react-router-dom';
 import '../styles/logo.css';
 import Nav from './Nav';
-import Schedule from './Schedule';
-import Produce from './Produce';
+import Market from './Market';
+import About from './About';
 
 class FarmersMarketApp extends Component {
   render() {
-    const contentStyles = {
-      maxWidth: '1500px'
-    }
     return (
       <div>
         <Nav />
-        <div style={contentStyles}>
-          <Schedule />
-          <Produce />
-        </div>
+        <Switch>
+          <Route exact path='/' component={Market} />
+          <Route path='/about' component={About} />
+        </Switch>
       </div>
     );
   }
